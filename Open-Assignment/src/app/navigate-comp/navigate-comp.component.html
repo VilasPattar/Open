@@ -1,0 +1,55 @@
+<!-- <div class="navbar">
+<div class="logo"></div>
+<div class="navtext" style="left: 1030px;">
+    Products
+</div>
+<div class="navtext" style="left: 1183px;">
+    Solutions
+</div>
+<div class="navtext" style="left: 1341px;">
+    Pricing
+</div>
+</div> -->
+
+<nav class="navbar navbar-expand-md sticky-top" style="height: 133px;">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">
+        <!-- <strong>MDB</strong> -->
+        <div class="logo" *ngIf="!collapseNav"></div>
+        <div class="scrollogo" *ngIf="collapseNav"></div>
+        
+      </a>
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a [ngClass]="{'nav-link' : true,'navtext' : !collapseNav, 'navtextshrink' : collapseNav}" style="left: 1030px;" href="#">Products
+            </a>
+          </li>
+          <li class="nav-item">
+            <a [ngClass]="{'nav-link':true,'navtext':!collapseNav,'navtextshrink':collapseNav}" style="left: 1183px;" href="#" >Solutions</a>
+          </li>
+          <li class="nav-item">
+            <a  [ngClass]="{'nav-link':true,'navtext':!collapseNav,'navtextshrink':collapseNav}" style="left: 1341px;" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn bg-transparent"  (mouseover)="changeStyle($event)" (mouseout)="changeStyle($event)"  [ngClass]="{'buttonlogin':!collapseNav,'buttonloginshrink':collapseNav}">Login</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn" [ngClass]="{'buttonget':!collapseNav,'buttongetshrink':collapseNav}">Get Started</button>
+          </li>
+        </ul>
+        </div>
+        </div>
+</nav>

@@ -1,0 +1,131 @@
+.navtext {
+  position: absolute;
+  top: 68px;
+  width: 103px;
+  height: 34px;
+  text-align: left;
+  font: normal normal normal 25px/34px Open Sans;
+  letter-spacing: 0px;
+  opacity: 1;
+}
+
+.navtextshrink {
+  position: absolute;
+  top: 34px;
+  width: 103px;
+  height: 34px;
+  text-align: left;
+  font: normal normal normal 25px/34px Open Sans;
+  letter-spacing: 0px;
+  opacity: 1;
+}
+
+.nav-link {
+  color: #222222;
+}
+
+.nav-link:hover {
+  color: blue;
+}
+
+.logo {
+  position: absolute;
+  display: block;
+  top: 27px;
+  left: 120px;
+  width: 123px;
+  height: 123px;
+  background: transparent url("../../assets/img/logo.png") 0% 0% no-repeat padding-box;
+  opacity: 1;
+  background-size: contain;
+}
+
+.scrollogo {
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 120px;
+  width: 100px;
+  height: 100px;
+  background: transparent url("../../assets/img/logo.png") 0% 0% no-repeat padding-box;
+  opacity: 1;
+  background-size: contain;
+}
+
+.navbar-inverse {
+  background-color: white;
+  max-height: 100px;
+  top: 0px;
+}
+
+.buttonlogin {
+  position: absolute;
+  display: block;
+  top: 66px;
+  left: 1480px;
+  width: 118px;
+  height: 45px;
+  -webkit-box-shadow: 0px 0px 20px #00000033;
+          box-shadow: 0px 0px 20px #00000033;
+  border: 2px solid #663399;
+  border-radius: 24px;
+  opacity: 1;
+}
+
+.buttonloginshrink {
+  position: absolute;
+  display: block;
+  top: 32px;
+  left: 1480px;
+  width: 118px;
+  height: 45px;
+  -webkit-box-shadow: 0px 0px 20px #00000033;
+          box-shadow: 0px 0px 20px #00000033;
+  border: 2px solid #663399;
+  border-radius: 24px;
+  opacity: 1;
+}
+
+.buttonlogin:hover, .buttonloginshrink:hover {
+  background-color: #663399;
+  cursor: pointer;
+  color: white;
+}
+
+.buttonget {
+  position: absolute;
+  display: block;
+  top: 66px;
+  left: 1622px;
+  width: 166px;
+  height: 45px;
+  background: transparent -webkit-gradient(linear, left top, right top, from(#9F62C9), to(#663399)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(90deg, #9F62C9 0%, #663399 100%) 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 0px 20px #00000033;
+          box-shadow: 0px 0px 20px #00000033;
+  border-radius: 24px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.buttongetshrink {
+  position: absolute;
+  display: block;
+  top: 32px;
+  left: 1622px;
+  width: 166px;
+  height: 45px;
+  background: transparent -webkit-gradient(linear, left top, right top, from(#9F62C9), to(#663399)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(90deg, #9F62C9 0%, #663399 100%) 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 0px 20px #00000033;
+          box-shadow: 0px 0px 20px #00000033;
+  border-radius: 24px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.buttonget:hover, .buttongetshrink:hover {
+  background: transparent -webkit-gradient(linear, left top, right top, from(#663399), to(#663399)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(90deg, #663399 0%, #663399 100%) 0% 0% no-repeat padding-box;
+}
+/*# sourceMappingURL=navigate-comp.component.css.map */

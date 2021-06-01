@@ -1,0 +1,81 @@
+<div class="card col-8 h-100">
+    <div class="card-body mb-3 pb-3">
+        
+        <div class="card-header text-center">Eligibility Calculator
+        </div>
+          
+        <div class="row flex-row p-2 mt-4 mb-3" style="margin-top: 150px;">
+              <span class="card-text pb-2">Monthly Income</span>
+              <span style="font-weight:bold; margin-bottom: 1rem;">{{monthlyIncome | currency:"&#8377;"}}</span>
+              
+              <input #ranger id="slider" type="range" class="form-range p-2" (input)="setmonthlyIncome(ranger.value)" min="100000" max="300000">
+  
+              <div>
+              <a class="float-left text-muted">{{100000 | currency:"&#8377;"}}</a>
+              <a class="float-right text-muted">{{300000 | currency:"&#8377;"}}</a>
+            </div>
+            <div class="track">
+              <div class="track-inner"></div>
+            </div>
+          </div>
+
+          <div class="row flex-row p-2 mt-3 mb-3">
+            <span class="card-text">Monthly Expense</span>
+            <span style="font-weight:bold;margin-bottom: 1rem;">{{monthlyExpense | currency:"&#8377;"}}</span>
+            
+            <input #monthlyexpense type="range" class="form-range p-2" (input)="setMonthlyExpense(monthlyexpense.value)" min="0" max="100000" value="50000">
+            <div class="track2">
+              <div class="track-inner2"></div>
+        </div>
+        
+     </div>
+
+        <div class="row flex-row p-2 mt-3 mb-3">
+          <span class="card-text">Repayment Teure</span>
+          <div class="p-2">
+          <select class="form-select" data-style="select" aria-label="Default select example">
+             <option value="1">1 Months</option>
+            <option value="2">2 Months</option>
+            <option value="3">3 Months</option>
+            <option value="4">4 Months</option>
+            <option value="5">5 Months</option>
+            <option value="6" selected>6 Months</option>
+          </select>
+        </div>
+        </div>
+        <div class="row p-2 mb-2">
+            <div class="card-text">Do you have any Existing loans?
+              <label class="switch float-right">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+              </label>
+            </div>
+            </div>
+        <div class="row flex-row p-2 mt-3">
+          <div class="card-item">EMI of existing Loan (Optional)</div>
+            <input type="text" class="form-control"  [ngModel]="formattedAmount| currency:'INR':'symbol':'1.0'" (ngModelChange)="formattedAmount=$event"/>
+        </div>
+  </div>
+</div>
+
+ <div class="col-4 loan">
+
+  <div class="flex-row" style="top: 25%; position: absolute;">
+    <div class="row flex-row mb-3">
+      <a style="font-size:medium; color: #FFFFFF; opacity: 0.5; text-align: center;">Loan Amount</a>
+      <strong style="font-size: x-large; color: white; text-align: center;">&#8377;1,00,000</strong>
+
+    </div>
+
+    <div class="row flex-row mt-3 mb-3">
+      <a style="font-size:medium; color: #FFFFFF; opacity: 0.5;text-align: center; ">Your EMI will be</a>
+      <strong style="font-size: x-large; color: white; text-align: center;">&#8377;15,000</strong>
+
+    </div>
+    <div class="row flex-row mt-3">
+      <button type="button" class="btn p-2 m-2">Get Money</button>
+    </div>
+  </div>
+
+
+ </div> 
