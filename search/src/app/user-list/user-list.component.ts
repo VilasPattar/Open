@@ -20,7 +20,7 @@ export class UserListComponent implements OnInit {
   public filter():any[]{
     this.isInactiveUser=!this.isInactiveUser;
     this.filterContent=this.searchContent.filter(item=>{
-       return item.isActive===this.isInactiveUser;
+       return item.isActive===!this.isInactiveUser;
     });
 
     return this.filterContent;
