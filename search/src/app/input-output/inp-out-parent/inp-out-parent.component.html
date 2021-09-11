@@ -1,0 +1,5 @@
+<app-inp-out-child  [parentValue]="parentVar" (emitChildValue)="bindChildValue($event)"></app-inp-out-child>
+
+<input type="text" [(ngModel)]="parentVar" placeholder="Parent Sample">
+
+<div class="pt-2 pb-2">Value from child component is {{childValue}}</div>

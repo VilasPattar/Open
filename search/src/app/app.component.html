@@ -1,0 +1,21 @@
+
+<div class="card container pt-2 mt-2 pb-2">
+  <h5 class="card-title">Search Task</h5>
+  <app-search (searchItemEmit)="onSearch($event)"></app-search>
+  <app-user-list [searchText]="searchText"></app-user-list>
+</div>
+
+<div class="card container pt-2 mt-2 pb-2">
+  <h5 class="card-title">@ViewChild Communication</h5>
+<app-parent></app-parent>
+</div>
+
+<div class="card container pt-2 mt-2 pb-2">
+  <h5 class="card-title">@Input, @Output Communication</h5>
+<app-inp-out-parent></app-inp-out-parent>
+</div>
+
+<div class="card container pt-2 mt-2 pb-2">
+  <h5 class="card-title">rxjs Communication</h5>
+<app-rxjsparent></app-rxjsparent>
+</div>
