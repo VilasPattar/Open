@@ -1,0 +1,10 @@
+<div class="custom-control custom-switch container pb-2">
+    <input type="checkbox" class="custom-control-input" id="customSwitches" (change)="filter()">
+    <label class="custom-control-label" for="customSwitches">Show Inactive Users</label>
+  </div>
+  
+  <div class="card w-100">
+    <ul class="list-group list-group-flush" *ngFor="let item of filterContent| search:searchText">
+      <li class="list-group-item" *ngIf="!isInactiveUser===item.isActive">{{item.name}}</li>
+    </ul>
+  </div>
